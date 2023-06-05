@@ -22,6 +22,6 @@ let flipdata = function(){
         isgandhijiold = true;
     }
     document.getElementById("gandhi-img").src = displayobject.imgurl;
-    document.getElementById("gandhi-name").innerHTML = displayobject.name;
-    document.getElementById("gandhi-description").innerHTML = displayobject.Description;
+    document.getElementById("mahatma-name").innerHTML = displayobject.name;
+    document.getElementById("mahatma-description").innerHTML = displayobject.Description;
 }
