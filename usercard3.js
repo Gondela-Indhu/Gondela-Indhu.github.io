@@ -9,7 +9,7 @@ let displayobject;
 let getRandomUser = function(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
-    .then(console.log(data))
+    .then(data => console.log(data))
     document.getElementById("gandhi-img").src = displayobject.imgurl;
     document.getElementById("mahatma-name").innerHTML = displayobject.name;
     document.getElementById("mahatma-description").innerHTML = displayobject.Description;
