@@ -4,23 +4,12 @@ let gandhioldinfo = {
     Description: "Freedom Fighter"
 }
 
-let gandhiyounginfo = {
-    imgurl: "https://tse3.mm.bing.net/th?id=OIP.NxIhSDYNWuiI7EHC7yu9QgHaHA&pid=Api&P=0&h=180",
-    name: "Mohandas KaramChandh Gandhi",
-    Description: "Father of the Nation"
-}
 
-let isgandhijiold = true;
 let displayobject;
-let flipdata = function(){
-    if(isgandhijiold == true){
-        displayobject = gandhiyounginfo;
-        isgandhijiold = false;
-    }
-    else{
-        displayobject = gandhioldinfo;
-        isgandhijiold = true;
-    }
+let getRandomUser = function(){
+    fetch("https://randomuser.me/api")
+    .then(response => response.json())
+    .then(console.log(data))
     document.getElementById("gandhi-img").src = displayobject.imgurl;
     document.getElementById("mahatma-name").innerHTML = displayobject.name;
     document.getElementById("mahatma-description").innerHTML = displayobject.Description;
